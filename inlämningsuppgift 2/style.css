@@ -258,11 +258,15 @@ i:hover, .gp-appstore:hover  {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
-#screens img {
-    width: 80%;
-    margin-top: 15px;
+.swiper-container {
+    width: 100%;
+    height: 100%;
 }
+.slider-content {
+    width: 80%;
+}
+
+
 /* Appstats */
 .appstats {
     background-image: url(images/worldmap.svg);
@@ -635,10 +639,7 @@ footer i {
         flex-direction: column;
     }
 
-    /* Screens */
-    #screens img {
-        width: 70%;
-    }
+    /* Appstats */
     .stats div {
         grid-column: span 2;
     }
@@ -672,7 +673,7 @@ footer i {
     /* Contact Us */
     #contactus {
         margin-bottom: 80px;
-        margin-top: 80px;
+        margin-top:60px;
     }
 
     /* Footer */
