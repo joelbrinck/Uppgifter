@@ -1,0 +1,50 @@
+.regform {
+    background-color: $secondary;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px;
+}
+
+.btn-purple {
+    color: $btn-text;
+    background-color: $btn-purple;
+    border-color: $btn-purple;
+}
+
+.btn-purple:hover {
+    color: $btn-text;
+    background-color: $btn-purple-hover;
+    border-color: $btn-purple-secondary;
+}
+
+.btn-purple:focus, .btn-purple.focus {
+    color: $btn-text;
+    background-color: $btn-purple-hover;
+    border-color: $btn-purple-secondary;
+    box-shadow: 0 0 0 0.2rem $btn-purple-boxshadow;
+}
+
+.btn-purple.disabled, .btn-purple:disabled {
+    color: $btn-text;
+    background-color: $btn-purple;
+    border-color: $btn-purple;
+}
+
+.btn-purple:not(:disabled):not(.disabled):active, .btn-purple:not(:disabled):not(.disabled).active,
+.show > .btn-purple.dropdown-toggle {
+    color: $btn-text;
+    background-color: $btn-purple-secondary;
+    border-color: $btn-purple-border;
+}
+
+.btn-purple:not(:disabled):not(.disabled):active:focus, .btn-purple:not(:disabled):not(.disabled).active:focus,
+.show > .btn-purple.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem $btn-purple-boxshadow;
+}
+  
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: $btn-purple-border;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $btn-purple-boxshadow;
+}
