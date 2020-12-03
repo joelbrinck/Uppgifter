@@ -13,10 +13,22 @@ $(".owl-carousel").owlCarousel({
 });
 
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
+    slidesPerView: 5,
     centeredSlides: true,
-    loop: true,
+    allowTouchMove: false,
     autoplay: true,
     autoplayTimeout: 2000,
+    loop: true,
     items: 5,
+    on: {
+        init: function () {
+            $('.swiper-slide-active .slider-content').addClass('active');
+        },
+        transitionStart: function() {
+            $('.slider-content').removeClass('active');
+        },
+        transitionEnd: function(swiper) {
+            $('.swiper-slide-active .slider-content').addClass('active');
+        }
+    }
 });
