@@ -221,8 +221,8 @@ i:hover, .gp-appstore:hover  {
 /* Features */
 #features {
     background-color: rgba(245, 245, 245, 0.3);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #features > div {
